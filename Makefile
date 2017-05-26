@@ -4,12 +4,12 @@ NAME="${REPO}:${TAG}"
 
 .PHONY: shell
 shell:
-	docker run -it ${NAME} sh
+	docker-compose run jupyter sh
 
 .PHONY: build
 build:
-	docker build -t ${NAME} .
+	docker-compose build
 
 .PHONY: run
 run:
-	docker run -i -p 8888:8888 ${NAME}
+	docker-compose up

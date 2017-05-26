@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    jupyter:
+        image: ryanlett/jupyter-docker:latest
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - './notebooks:/var/workspace'
+        ports:
+            - '8888:8888'

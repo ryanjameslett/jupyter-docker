@@ -4,7 +4,7 @@ This repo will be the basis for any data science project going forward.
 
 ## Commands
 
-`make build`: Build the docker container (currently tagged as ryanlett/jupyter:0.1)
+`make build`: Build the docker container.
 
 `make shell`: Log into the container to do some debugging
 
